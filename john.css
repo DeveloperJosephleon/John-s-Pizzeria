@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+.container {
+  margin: 0 150px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+.media_nav {
+  display: none;
+}
+/* This is the flex class */
+.flex_container {
+  display: flex;
+  width: 100%;
+  height: 650px;
+  justify-content: center;
+  gap: 0;
+  padding: 0 50px;
+  align-items: center;
+  
+  .left {
+    width: 100%;
+    font-size: 24px;
+    font-family: Helvetica;
+  }
+  button {
+    padding: 15px 30px;
+    background: none;
+    border-radius: 20px;
+    border-color: orange;
+  }
+  button:hover {
+    background: black;
+    color: white;
+    border: none;
+  }
+}
+
+.details h3 {
+  font-size: 2rem;
+}
+
+.details p {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.right {
+  width: 950px;
+  height: 600px;
+  background-image: url("./pizza_woman.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.video_frame {
+  display: none;
+}
