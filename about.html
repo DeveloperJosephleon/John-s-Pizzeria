@@ -1,51 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John's Pizza</title>
-  <link rel="stylesheet" href="john.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Pizza</title>
+    <link rel="stylesheet" href="john.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header class="header">
-    <div class="logo">🍕 John's Pizzeria</div>
-    <nav class="desktop-nav">
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="mobile-nav">
-      <i class="bx bx-menu"></i>
-    </div>
-  </header>
+    <header class="header">
+        <div class="logo">🍕 John's Pizzeria</div>
+        <nav class="desktop-nav">
+            <a href="/index.html">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="mobile-nav">
+            <i class="bx bx-menu"></i>
+        </div>
+    </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to <span>John's Pizzeria</span></h1>
-      <p>Your favorite pizza destination in New York City.</p>
-      <p>Savor the Taste of Tradition at John's Pizzeria.</p>
-      <p>Where Every Slice is a Masterpiece!.</p>
-      <button class="cta-button">View Our Menu</button>
-    </div>
-    <div class="hero-image">
-      <img src="./pizza_woman.jpg" alt="Pizza Preparation">
-    </div>
-  </section>
+    Story: Share the history of John's Pizzeria, emphasizing tradition and quality.
+    "Founded in 1985, John's Pizzeria started as a small family-owned business committed to crafting authentic Italian
+    pizzas. Today, we’ve grown into a New York staple while keeping that homemade touch in every slice."
 
-  <section class="video-section" id="about">
-    <h2>How We Make Pizza</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XKC62IFnH2s?si=Mn8Pon95ceeMjdbB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
+    Team Highlights: Introduce the head chef or key staff to build trust.
 
-  <footer class="footer" id="contact">
-    <div>
-      <h3>Contact Us</h3>
-      <p>254 W 27ST ST, NEW YORK, NY 10011 | (212) 123-4567</p>
-      <p>341 W 11ST ST, NEW YORK, NY 10022 | (212) 123-4567</p>
-    </div>
-    <p>&copy; 2025 John's Pizzeria. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+    Sustainability: Mention if you use fresh, organic, or locally sourced ingredients.
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>John's Pizzeria</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">John's Pizzeria</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Savor the Taste of Tradition</h1>
+                <p>Where Every Slice is a Masterpiece!</p>
+                <button>Order Now</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Since 1985, John's Pizzeria has been serving authentic Italian pizzas made with love. Our ingredients are
+                fresh, locally sourced, and crafted into delicious recipes you'll love!</p>
+        </section>
+
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <div class="menu-item">
+                    <h3>Classic Pizzas</h3>
+                    <p>Try our timeless favorites like Margherita, Pepperoni, and Hawaiian.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Gourmet Pizzas</h3>
+                    <p>Indulge in premium creations like Truffle Mushroom and Prosciutto.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Create Your Own</h3>
+                    <p>Build your perfect pizza with our wide variety of fresh toppings.</p>
+                </div>
+            </div>
+            <button>View Full Menu</button>
+        </section>
+
+        <section id="order" class="order">
+            <h2>Order Online</h2>
+            <form>
+                <label for="pizza">Choose Your Pizza:</label>
+                <select id="pizza">
+                    <option>Margherita</option>
+                    <option>Pepperoni</option>
+                    <option>Truffle Mushroom</option>
+                </select>
+                <label for="toppings">Add Toppings:</label>
+                <input type="text" id="toppings" placeholder="e.g., Extra Cheese, Jalapeños">
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="carousel">
+                <p>"Best pizza ever! I can't get enough of the truffle mushroom!"</p>
+                <p>"Fast delivery and unbeatable flavors. Highly recommend!"</p>
+                <p>"The create-your-own-pizza option is amazing!"</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Visit us at:</p>
+            <p>254 W 27th St, New York, NY 10011</p>
+            <p>(212) 123-4567</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 John's Pizzeria. All Rights Reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+            </div>
+        </footer>
+
+
+    </body>
+
+    </html>
